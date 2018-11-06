@@ -1,0 +1,67 @@
+these are taken from existing sms install in LDC
+
+(python3.6) agould@horus:~> aws iam get-role --role-name sms
+{
+    "Role": {
+        "Path": "/",
+        "RoleName": "sms",
+        "RoleId": "AROAJANMM7GFNE3UYCPYC",
+        "Arn": "arn:aws:iam::074589347111:role/sms",
+        "CreateDate": "2017-06-30T06:32:13Z",
+        "AssumeRolePolicyDocument": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Sid": "",
+                    "Effect": "Allow",
+                    "Principal": {
+                        "Service": "sms.amazonaws.com"
+                    },
+                    "Action": "sts:AssumeRole",
+                    "Condition": {
+                        "StringEquals": {
+                            "sts:ExternalId": "sms"
+                        }
+                    }
+                }
+            ]
+        },
+        "MaxSessionDuration": 3600
+    }
+}
+
+
+(python3.6) agould@horus:~> aws iam list-role-policies --role-name sms
+{
+    "PolicyNames": [
+        "sms"
+    ]
+}
+
+
+(python3.6) agould@horus:~> aws iam get-role-policy --role-name sms --policy-name sms
+{
+    "RoleName": "sms",
+    "PolicyName": "sms",
+    "PolicyDocument": {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Effect": "Allow",
+                "Action": [
+                    "ec2:ModifySnapshotAttribute",
+                    "ec2:CopySnapshot",
+                    "ec2:CopyImage",
+                    "ec2:DeleteSnapshot",
+                    "ec2:DescribeImages",
+                    "ec2:DescribeSnapshots"
+                ],
+                "Resource": "*"
+            }
+        ]
+    }
+}
+
+
+
+
