@@ -1,0 +1,34 @@
+ 1172  aws ec2 describe-images
+ 1173  aws ec2 describe-images --owners self
+ 1174  aws ec2 describe-images --owners self|less
+ 1176  aws ec2 describe-image-attribute --image-id ami-fb6fe483
+ 1177  aws ec2 describe-images --owners self --query 'Images[*].Tags'
+
+(python3.6) agould@horus:~/git-repos/github/ucopacme/organizer> aws ec2 describe-images --owners self --query 'Images[*].Tags'
+[
+    [
+        {
+            "Key": "Name",
+            "Value": "ucop-rhel6-ec2-template"
+        }
+    ],
+    [
+        {
+            "Key": "Name",
+            "Value": "rhel64-template-sdsc-new"
+        }
+    ],
+    [
+        {
+            "Key": "Name",
+            "Value": "ucop-rhel6-ec2-template.old"
+        }
+    ],
+    [
+        {
+            "Key": "Name",
+            "Value": "puppetmaster"
+        }
+    ]
+]
+

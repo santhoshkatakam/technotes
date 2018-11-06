@@ -83,3 +83,41 @@ EC2 Management in Legacy Data Center and elsewhere
 
 - maintain repository of UCOP standardized ec2 AMI
 - develop SSM service to manage running ec2 instances
+
+
+
+Guidelines for running EC2 instances in AWS (outside of boneyard)
+-----------------------------------------------------------------
+
+Avoid hosting applications on EC2 instances. But if you feel you must:
+
+-  Devops will maintain base AMIs for an approved set of OS distributions.
+   These AMI will be updated weekly.They include the following:
+
+   -  SSM agent
+
+   -  predefined instance policy for centralized logging
+
+   -  basic security configuration
+
+-  Developers deploy EC2 instances from one of the Devops managed AMI,
+   ideally using userdata scripts to configure customization at launch
+   time.
+
+-  EC2 instances write system and application logs to S3.
+
+-  EC2 instances should be stateless. Avoid attaching EFS or ELB
+   volumes.
+
+-  EC2 instances should be restarted weekly to avoid configuration drift
+   and to apply OS updates.
+
+-  EC2 instances run on private subnets and are not publicly routable.
+   Access is via ELB.
+
+-  No direct user access (``ssh``, ``rdp``) to running EC2 instances.
+
+-  Any system management or configuration change is done via SSM or by
+   updating the build scripts and relaunching.
+
+
