@@ -10,11 +10,11 @@ https://docs.aws.amazon.com/server-migration-service/latest/userguide/cli_workfl
             "capabilityList": [
                 "VSPHERE"
             ],
-            "vmManagerName": "p-sdsc-vcenter1.ucop.edu",
+            "vmManagerName": "vcenter1.domain.edu",
             "vmManagerType": "VSPHERE",
-            "vmManagerId": "8DA3177D-A94E-4989-80E0-EE8A8A2E9586",
-            "ipAddress": "128.48.73.31",
-            "macAddress": "00-50-56-8E-29-8F",
+            "vmManagerId": "8DA3177D-A94E-4989-80E0-FFFFFFFFFFFFFF",
+            "ipAddress": "1.2.3.4",
+            "macAddress": "00-50-FF-FF-FF-FF",
             "associatedOn": 1536186073.433
         }
     ]
@@ -28,13 +28,13 @@ https://docs.aws.amazon.com/server-migration-service/latest/userguide/cli_workfl
             "serverType": "VIRTUAL_MACHINE",
             "vmServer": {
                 "vmServerAddress": {
-                    "vmManagerId": "8DA3177D-A94E-4989-80E0-EE8A8A2E9586",
+                    "vmManagerId": "8DA3177D-A94E-4989-80E0-FFFFFFFFFFFFFF",
                     "vmId": "vm-100090"
                 },
                 "vmName": "d-its-bfipython",
-                "vmManagerName": "p-sdsc-vcenter1.ucop.edu",
+                "vmManagerName": "vcenter1.domain.edu",
                 "vmManagerType": "vSphere",
-                "vmPath": "/Datacenters/SDSC/vm/d-its-bfipython"
+                "vmPath": "/Datacenters/SDSC/vm/random-hostname"
             }
         },
         {
@@ -43,16 +43,8 @@ https://docs.aws.amazon.com/server-migration-service/latest/userguide/cli_workfl
             "vmServer": {
 
 (python3.6) agould@horus:~> aws sms get-servers | grep vmName | head
-                "vmName": "d-its-bfipython",
-                "vmName": "aigwebq03",
-                "vmName": "aigtest04.old",
-                "vmName": "ucpfnapp01q",
-                "vmName": "opsmonp09",
-                "vmName": "t-its-astiis01",
-                "vmName": "q-ucrs-dcaptm9",
-                "vmName": "aigappd05",
-                "vmName": "aigwebd03",
-                "vmName": "l-irc-bigfixsrv",
+[cut]
+
 (python3.6) agould@horus:~> aws sms get-servers | grep vmName |wc -l
 587
 

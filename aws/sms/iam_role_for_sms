@@ -6,7 +6,7 @@ these are taken from existing sms install in LDC
         "Path": "/",
         "RoleName": "sms",
         "RoleId": "AROAJANMM7GFNE3UYCPYC",
-        "Arn": "arn:aws:iam::074589347111:role/sms",
+        "Arn": "arn:aws:iam::1234456775544:role/sms",
         "CreateDate": "2017-06-30T06:32:13Z",
         "AssumeRolePolicyDocument": {
             "Version": "2012-10-17",
