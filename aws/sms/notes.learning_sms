@@ -1,3 +1,93 @@
 https://docs.aws.amazon.com/server-migration-service/latest/userguide/cli_workflow.html
 
+(python3.6) agould@horus:~> aws sms get-connectors
+{
+    "connectorList": [
+        {
+            "connectorId": "c-415fef98f4c66c487",
+            "version": "1.0.5.2",
+            "status": "HEALTHY",
+            "capabilityList": [
+                "VSPHERE"
+            ],
+            "vmManagerName": "p-sdsc-vcenter1.ucop.edu",
+            "vmManagerType": "VSPHERE",
+            "vmManagerId": "8DA3177D-A94E-4989-80E0-EE8A8A2E9586",
+            "ipAddress": "128.48.73.31",
+            "macAddress": "00-50-56-8E-29-8F",
+            "associatedOn": 1536186073.433
+        }
+    ]
+}
+
+(python3.6) agould@horus:~> aws sms get-servers |head -20
+{
+    "serverList": [
+        {
+            "serverId": "s-3dbc5954",
+            "serverType": "VIRTUAL_MACHINE",
+            "vmServer": {
+                "vmServerAddress": {
+                    "vmManagerId": "8DA3177D-A94E-4989-80E0-EE8A8A2E9586",
+                    "vmId": "vm-100090"
+                },
+                "vmName": "d-its-bfipython",
+                "vmManagerName": "p-sdsc-vcenter1.ucop.edu",
+                "vmManagerType": "vSphere",
+                "vmPath": "/Datacenters/SDSC/vm/d-its-bfipython"
+            }
+        },
+        {
+            "serverId": "s-85bc59ec",
+            "serverType": "VIRTUAL_MACHINE",
+            "vmServer": {
+
+(python3.6) agould@horus:~> aws sms get-servers | grep vmName | head
+                "vmName": "d-its-bfipython",
+                "vmName": "aigwebq03",
+                "vmName": "aigtest04.old",
+                "vmName": "ucpfnapp01q",
+                "vmName": "opsmonp09",
+                "vmName": "t-its-astiis01",
+                "vmName": "q-ucrs-dcaptm9",
+                "vmName": "aigappd05",
+                "vmName": "aigwebd03",
+                "vmName": "l-irc-bigfixsrv",
+(python3.6) agould@horus:~> aws sms get-servers | grep vmName |wc -l
+587
+
+
+(python3.6) agould@horus:~> aws sms get-servers | grep vmName | grep awsscrum
+(python3.6) agould@horus:~> aws sms import-server-catalog
+
+# takes a few minutes to propgate
+(python3.6) agould@horus:~> aws sms get-servers | grep vmName | grep awsscrum
+                "vmName": "awsscrum-lnx2",
+                "vmName": "awsscrum-win2",
+                "vmName": "awsscrum-win3",
+                "vmName": "awsscrum-win1",
+                "vmName": "awsscrum-lnx1",
+
+(python3.6) agould@horus:~> aws sms get-servers | grep vmName |wc -l
+594
+
+----
+
+aws ec2 describe-snapshots | tee /tmp/ec2-snapshots
+
+boto_queries> grep SnapshotId /tmp/ec2-snapshots | wc -l
+17191
+
+
+(python3.6) agould@horus:~/git-repos/github/ucopacme/technotes/aws/sms/boto_queries> tail -5 get_snap_sizes.py 
+
+sizes = [snap['VolumeSize'] for snap in snaps]
+print(len(sizes))
+total_snap_size = sum(sizes)
+print(total_snap_size)
+
+
+(python3.6) agould@horus:~/git-repos/github/ucopacme/technotes/aws/sms/boto_queries> python get_snap_sizes.py 
+17199
+679245
 

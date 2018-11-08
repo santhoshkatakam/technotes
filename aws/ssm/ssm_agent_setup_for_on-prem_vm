@@ -1,0 +1,41 @@
+How to install ssm-agent and connect to ssm on a VMware linux vm
+================================================================
+
+in ssm:
+
+- generate a activation id and key
+  - should we use same key for many instances, or one per instance?
+- save activation key/id into a secure location
+  - secrests store?
+  - ssm parameters?
+
+
+with ansible:
+
+- install ssm-agent 
+- ensure agent is stopped
+- run agent registration command
+  - supply activation key/id
+- enable and start agent
+
+
+
+
+
+generate a activation id and key
+********************************
+
+HOSTNAME=awsscrum-lnx2
+INSTANCE_ROLE=service-role/AmazonEC2RunCommandRoleForManagedInstances
+OUTPUT_FILE=$(mktemp)
+
+aws ssm create-activation \
+  --description $HOSTNAME \
+  --default-instance-name $HOSTNAME \
+  --iam-role $INSTANCE_ROLE > $OUTPUT_FILE
+
+aws ssm put-parameter \
+  --name /ssm-activation/$HOSTNAME \
+  --type string \
+  --value $(cat $OUTPUT_FILE)
+  
