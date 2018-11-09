@@ -1,0 +1,6 @@
+---
+- hosts: awsscrum-lnx1
+  user: ashley
+  roles:
+    - ssm
+

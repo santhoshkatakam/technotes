@@ -1,32 +1,20 @@
 ---
-- hosts: localhost
-  remote_user: agould
-  vars:
-    activation: "{{ lookup('aws_ssm', '/activation/blee-01') }}"
-  tasks:
-  - name: lookup activation id
-    debug:
-      var: activation['ActivationId']
-  - name: lookup activation code 
-    debug:
-      var: activation['ActivationCode']
-
 - hosts: testservers
   remote_user: ashley
+  become: yes
   vars:
-    activation: "{{ lookup('aws_ssm', '/activation/blee-01') }}"
+    region: "us-west-2"
+    activation: "{{ lookup('aws_ssm', '{{ ssm_param_name }}') }}"
   tasks:
-  - name: stupid shell command
-    shell: /bin/hostname -f
-    register: my_hostname
-  - name: print stupid shell command
-    debug:
-      var: my_hostname.stdout
   - name: lookup activation id
     debug:
       var: activation['ActivationId']
-      #var: hostvars['localhost']['facter_ssh']['ecdsa']
-      #var: hostvars['localhost']
-  - name: env vars
+  - name: lookup activation code
     debug:
-      var: ansible_play_hosts
+      var: activation['ActivationCode']
+  roles:
+    - role: ansible-aws-ssm
+      vars:
+        aws_ssm_activation_id: "{{ activation['ActivationId'] }}"
+        aws_ssm_activation_code: "{{ activation['ActivationCode'] }}"
+        aws_ssm_ec2_region: "{{ region }}"

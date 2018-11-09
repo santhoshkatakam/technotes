@@ -1,0 +1,19 @@
+---
+ 
+- name: Creating SSM directory  in tmp
+  file:
+    path: "{{ temp_ssm }}"
+    state: directory
+
+- name: Install deb file for Debian family 32/64-bit
+  become: yes
+  become_user: root
+  apt:
+    deb: "https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/debian_amd64/amazon-ssm-agent.deb"
+
+- name: Starting SSM service
+  service:
+    name: amazon-ssm-agent
+    enabled: yes
+    state: started
+ 
