@@ -1,0 +1,32 @@
+---
+- hosts: localhost
+  remote_user: agould
+  vars:
+    activation: "{{ lookup('aws_ssm', '/activation/blee-01') }}"
+  tasks:
+  - name: lookup activation id
+    debug:
+      var: activation['ActivationId']
+  - name: lookup activation code 
+    debug:
+      var: activation['ActivationCode']
+
+- hosts: testservers
+  remote_user: ashley
+  vars:
+    activation: "{{ lookup('aws_ssm', '/activation/blee-01') }}"
+  tasks:
+  - name: stupid shell command
+    shell: /bin/hostname -f
+    register: my_hostname
+  - name: print stupid shell command
+    debug:
+      var: my_hostname.stdout
+  - name: lookup activation id
+    debug:
+      var: activation['ActivationId']
+      #var: hostvars['localhost']['facter_ssh']['ecdsa']
+      #var: hostvars['localhost']
+  - name: env vars
+    debug:
+      var: ansible_play_hosts

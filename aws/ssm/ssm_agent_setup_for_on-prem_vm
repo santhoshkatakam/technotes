@@ -34,8 +34,6 @@ aws ssm create-activation \
   --default-instance-name $HOSTNAME \
   --iam-role $INSTANCE_ROLE > $OUTPUT_FILE
 
-aws ssm put-parameter \
-  --name /ssm-activation/$HOSTNAME \
-  --type string \
-  --value $(cat $OUTPUT_FILE)
-  
+
+
+
