@@ -24,17 +24,30 @@ vm_name = next((
 print(vm_name)
 
 
-'''
-describe_instance_information
-  filter for managed instances
-  get the instance id for thing matching hostname
-
-response = client.list_tags_for_resource(
-    ResourceType='ManagedInstance',
-    ResourceId='string'
+ssm_client = boto3.client('ssm')
+response = ssm_client.describe_instance_information(
+    Filters=[{'Key': "ResourceType", 'Values': ["ManagedInstance"]}]
 )
+print(yamlfmt(response))
+
+#instance_id = next((
+instance_id = [
+    item['Name'] for item in response['InstanceInformationList']
+    if 'Name' in item
+    and item['Name'] == vm_name
+]
+#), None)
+
+print(instance_id)
+# get the instance id for thing matching hostname
+
+#response = client.list_tags_for_resource(
+#    ResourceType='ManagedInstance',
+#    ResourceId='string'
+#)
 
 
+'''
 now go tag your ami
 '''
 
