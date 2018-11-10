@@ -1,0 +1,988 @@
+{
+    "Images": [
+        {
+            "Architecture": "x86_64",
+            "CreationDate": "2018-11-06T06:37:58.000Z",
+            "ImageId": "ami-0023501b3dc52ba8d",
+            "ImageLocation": "074589347111/Created by (sms-job-ce9673a7/sms-run-0c6e8b65)",
+            "ImageType": "machine",
+            "Public": false,
+            "OwnerId": "074589347111",
+            "State": "available",
+            "BlockDeviceMappings": [
+                {
+                    "DeviceName": "/dev/sda1",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-0dca1b1b755ba7611",
+                        "VolumeSize": 32,
+                        "VolumeType": "gp2"
+                    }
+                },
+                {
+                    "DeviceName": "/dev/sdf",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-035f66d36f61410ab",
+                        "VolumeSize": 30,
+                        "VolumeType": "gp2"
+                    }
+                }
+            ],
+            "Description": "SMS ReplicationJobId = sms-job-ce9673a7 ReplicationRunId = sms-run-0c6e8b65",
+            "EnaSupport": false,
+            "Hypervisor": "xen",
+            "Name": "Created by (sms-job-ce9673a7/sms-run-0c6e8b65)",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "VirtualizationType": "hvm"
+        },
+        {
+            "Architecture": "x86_64",
+            "CreationDate": "2018-11-04T19:52:38.000Z",
+            "ImageId": "ami-0047d774fb75338f8",
+            "ImageLocation": "074589347111/Created by (sms-job-ce9673a7/sms-run-9e6f8af7)",
+            "ImageType": "machine",
+            "Public": false,
+            "OwnerId": "074589347111",
+            "State": "available",
+            "BlockDeviceMappings": [
+                {
+                    "DeviceName": "/dev/sda1",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-0411f42975a4619ce",
+                        "VolumeSize": 32,
+                        "VolumeType": "gp2"
+                    }
+                },
+                {
+                    "DeviceName": "/dev/sdf",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-07f7d13f1a85b4538",
+                        "VolumeSize": 30,
+                        "VolumeType": "gp2"
+                    }
+                }
+            ],
+            "Description": "SMS ReplicationJobId = sms-job-ce9673a7 ReplicationRunId = sms-run-9e6f8af7",
+            "EnaSupport": false,
+            "Hypervisor": "xen",
+            "Name": "Created by (sms-job-ce9673a7/sms-run-9e6f8af7)",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "VirtualizationType": "hvm"
+        },
+        {
+            "Architecture": "x86_64",
+            "CreationDate": "2018-11-09T18:33:07.000Z",
+            "ImageId": "ami-0254c74473820eb5c",
+            "ImageLocation": "074589347111/Created by (sms-job-ce9673a7/sms-run-c4698cad)",
+            "ImageType": "machine",
+            "Public": false,
+            "OwnerId": "074589347111",
+            "State": "available",
+            "BlockDeviceMappings": [
+                {
+                    "DeviceName": "/dev/sda1",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-05a95857456e04410",
+                        "VolumeSize": 32,
+                        "VolumeType": "gp2"
+                    }
+                },
+                {
+                    "DeviceName": "/dev/sdf",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-084e1ff041bbd948e",
+                        "VolumeSize": 30,
+                        "VolumeType": "gp2"
+                    }
+                }
+            ],
+            "Description": "SMS ReplicationJobId = sms-job-ce9673a7 ReplicationRunId = sms-run-c4698cad",
+            "EnaSupport": false,
+            "Hypervisor": "xen",
+            "Name": "Created by (sms-job-ce9673a7/sms-run-c4698cad)",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "VirtualizationType": "hvm"
+        },
+        {
+            "Architecture": "x86_64",
+            "CreationDate": "2018-11-07T06:38:57.000Z",
+            "ImageId": "ami-0360a462d87cd36f7",
+            "ImageLocation": "074589347111/Created by (sms-job-ce9673a7/sms-run-d76e8bbe)",
+            "ImageType": "machine",
+            "Public": false,
+            "OwnerId": "074589347111",
+            "State": "available",
+            "BlockDeviceMappings": [
+                {
+                    "DeviceName": "/dev/sda1",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-0f95047eff6edd917",
+                        "VolumeSize": 32,
+                        "VolumeType": "gp2"
+                    }
+                },
+                {
+                    "DeviceName": "/dev/sdf",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-095ea54b9fcd9b72c",
+                        "VolumeSize": 30,
+                        "VolumeType": "gp2"
+                    }
+                }
+            ],
+            "Description": "SMS ReplicationJobId = sms-job-ce9673a7 ReplicationRunId = sms-run-d76e8bbe",
+            "EnaSupport": false,
+            "Hypervisor": "xen",
+            "Name": "Created by (sms-job-ce9673a7/sms-run-d76e8bbe)",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "VirtualizationType": "hvm"
+        },
+        {
+            "Architecture": "x86_64",
+            "CreationDate": "2018-11-08T18:38:50.000Z",
+            "ImageId": "ami-0507e574d94efa6f0",
+            "ImageLocation": "074589347111/Created by (sms-job-ce9673a7/sms-run-2f698c46)",
+            "ImageType": "machine",
+            "Public": false,
+            "OwnerId": "074589347111",
+            "State": "available",
+            "BlockDeviceMappings": [
+                {
+                    "DeviceName": "/dev/sda1",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-0a246239af3d5840e",
+                        "VolumeSize": 32,
+                        "VolumeType": "gp2"
+                    }
+                },
+                {
+                    "DeviceName": "/dev/sdf",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-02bbbd1e77d83ca02",
+                        "VolumeSize": 30,
+                        "VolumeType": "gp2"
+                    }
+                }
+            ],
+            "Description": "SMS ReplicationJobId = sms-job-ce9673a7 ReplicationRunId = sms-run-2f698c46",
+            "EnaSupport": false,
+            "Hypervisor": "xen",
+            "Name": "Created by (sms-job-ce9673a7/sms-run-2f698c46)",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "VirtualizationType": "hvm"
+        },
+        {
+            "Architecture": "x86_64",
+            "CreationDate": "2018-11-09T06:38:07.000Z",
+            "ImageId": "ami-05805481fdd52ea77",
+            "ImageLocation": "074589347111/Created by (sms-job-ce9673a7/sms-run-10698c79)",
+            "ImageType": "machine",
+            "Public": false,
+            "OwnerId": "074589347111",
+            "State": "available",
+            "BlockDeviceMappings": [
+                {
+                    "DeviceName": "/dev/sda1",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-092b19305db46a7da",
+                        "VolumeSize": 32,
+                        "VolumeType": "gp2"
+                    }
+                },
+                {
+                    "DeviceName": "/dev/sdf",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-0d6fa4a1638a71e53",
+                        "VolumeSize": 30,
+                        "VolumeType": "gp2"
+                    }
+                }
+            ],
+            "Description": "SMS ReplicationJobId = sms-job-ce9673a7 ReplicationRunId = sms-run-10698c79",
+            "EnaSupport": false,
+            "Hypervisor": "xen",
+            "Name": "Created by (sms-job-ce9673a7/sms-run-10698c79)",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "VirtualizationType": "hvm"
+        },
+        {
+            "Architecture": "x86_64",
+            "CreationDate": "2018-04-27T00:15:03.000Z",
+            "ImageId": "ami-07412a7f",
+            "ImageLocation": "074589347111/ucop-rhel6-ec2-template",
+            "ImageType": "machine",
+            "Public": false,
+            "OwnerId": "074589347111",
+            "State": "available",
+            "BlockDeviceMappings": [
+                {
+                    "DeviceName": "/dev/sda1",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-07c40cf6b550606d4",
+                        "VolumeSize": 32,
+                        "VolumeType": "gp2"
+                    }
+                }
+            ],
+            "Description": "re-puppetized RHEL 6 template",
+            "Hypervisor": "xen",
+            "Name": "ucop-rhel6-ec2-template",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "ucop-rhel6-ec2-template"
+                }
+            ],
+            "VirtualizationType": "hvm"
+        },
+        {
+            "Architecture": "x86_64",
+            "CreationDate": "2018-11-05T18:33:01.000Z",
+            "ImageId": "ami-080ca3e10042472f9",
+            "ImageLocation": "074589347111/Created by (sms-job-ce9673a7/sms-run-4d6e8b24)",
+            "ImageType": "machine",
+            "Public": false,
+            "OwnerId": "074589347111",
+            "State": "available",
+            "BlockDeviceMappings": [
+                {
+                    "DeviceName": "/dev/sda1",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-09a6169a8f36c24ae",
+                        "VolumeSize": 32,
+                        "VolumeType": "gp2"
+                    }
+                },
+                {
+                    "DeviceName": "/dev/sdf",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-053739fb8ed3a3aa4",
+                        "VolumeSize": 30,
+                        "VolumeType": "gp2"
+                    }
+                }
+            ],
+            "Description": "SMS ReplicationJobId = sms-job-ce9673a7 ReplicationRunId = sms-run-4d6e8b24",
+            "EnaSupport": false,
+            "Hypervisor": "xen",
+            "Name": "Created by (sms-job-ce9673a7/sms-run-4d6e8b24)",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "Tags": [
+                {
+                    "Key": "Hostname",
+                    "Value": "aigtest02.ucop.edu"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "aigtest02"
+                }
+            ],
+            "VirtualizationType": "hvm"
+        },
+        {
+            "Architecture": "x86_64",
+            "CreationDate": "2018-11-08T18:35:49.000Z",
+            "ImageId": "ami-083ed45289cc62a6c",
+            "ImageLocation": "074589347111/Created by (sms-job-a19673c8/sms-run-2c698c45)",
+            "ImageType": "machine",
+            "Public": false,
+            "OwnerId": "074589347111",
+            "State": "available",
+            "BlockDeviceMappings": [
+                {
+                    "DeviceName": "/dev/sda1",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-04d88015ab868002d",
+                        "VolumeSize": 32,
+                        "VolumeType": "gp2"
+                    }
+                },
+                {
+                    "DeviceName": "/dev/sdf",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-09af4f81d2dbae37a",
+                        "VolumeSize": 100,
+                        "VolumeType": "gp2"
+                    }
+                }
+            ],
+            "Description": "testing moving scrappy",
+            "EnaSupport": false,
+            "Hypervisor": "xen",
+            "Name": "Created by (sms-job-a19673c8/sms-run-2c698c45)",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "VirtualizationType": "hvm"
+        },
+        {
+            "Architecture": "x86_64",
+            "CreationDate": "2018-06-28T05:18:23.000Z",
+            "ImageId": "ami-09b6fd71",
+            "ImageLocation": "074589347111/Created by (sms-job-4a826723/sms-run-c438ddad)",
+            "ImageType": "machine",
+            "Public": false,
+            "OwnerId": "074589347111",
+            "Platform": "windows",
+            "State": "available",
+            "BlockDeviceMappings": [
+                {
+                    "DeviceName": "/dev/sda1",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-0524e3f14747fe9f3",
+                        "VolumeSize": 200,
+                        "VolumeType": "gp2"
+                    }
+                },
+                {
+                    "DeviceName": "/dev/sdf",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-0e31681790175761d",
+                        "VolumeSize": 210,
+                        "VolumeType": "gp2"
+                    }
+                }
+            ],
+            "Description": "SMS ReplicationJobId = sms-job-4a826723 ReplicationRunId = sms-run-c438ddad",
+            "EnaSupport": false,
+            "Hypervisor": "xen",
+            "Name": "Created by (sms-job-4a826723/sms-run-c438ddad)",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm"
+        },
+        {
+            "Architecture": "x86_64",
+            "CreationDate": "2018-09-27T19:27:05.000Z",
+            "ImageId": "ami-09bac0b21596308a1",
+            "ImageLocation": "074589347111/Created by (sms-job-cf8a6fa6/sms-run-ac19fcc5)",
+            "ImageType": "machine",
+            "Public": false,
+            "OwnerId": "074589347111",
+            "State": "available",
+            "BlockDeviceMappings": [
+                {
+                    "DeviceName": "/dev/sda1",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-0fea1e0fcb85ec4cf",
+                        "VolumeSize": 32,
+                        "VolumeType": "gp2"
+                    }
+                }
+            ],
+            "Description": "SMS ReplicationJobId = sms-job-cf8a6fa6 ReplicationRunId = sms-run-ac19fcc5",
+            "EnaSupport": false,
+            "Hypervisor": "xen",
+            "Name": "Created by (sms-job-cf8a6fa6/sms-run-ac19fcc5)",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "rhel64-template-sdsc-new"
+                }
+            ],
+            "VirtualizationType": "hvm"
+        },
+        {
+            "Architecture": "x86_64",
+            "CreationDate": "2018-11-08T06:43:45.000Z",
+            "ImageId": "ami-0ae27e2205e64e52a",
+            "ImageLocation": "074589347111/Created by (sms-job-ce9673a7/sms-run-73698c1a)",
+            "ImageType": "machine",
+            "Public": false,
+            "OwnerId": "074589347111",
+            "State": "available",
+            "BlockDeviceMappings": [
+                {
+                    "DeviceName": "/dev/sda1",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-006e07b3b58fb956c",
+                        "VolumeSize": 32,
+                        "VolumeType": "gp2"
+                    }
+                },
+                {
+                    "DeviceName": "/dev/sdf",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-0504df4e379e2ee6c",
+                        "VolumeSize": 30,
+                        "VolumeType": "gp2"
+                    }
+                }
+            ],
+            "Description": "SMS ReplicationJobId = sms-job-ce9673a7 ReplicationRunId = sms-run-73698c1a",
+            "EnaSupport": false,
+            "Hypervisor": "xen",
+            "Name": "Created by (sms-job-ce9673a7/sms-run-73698c1a)",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "VirtualizationType": "hvm"
+        },
+        {
+            "Architecture": "x86_64",
+            "CreationDate": "2018-11-06T18:38:17.000Z",
+            "ImageId": "ami-0be38bc3f4048a4f0",
+            "ImageLocation": "074589347111/Created by (sms-job-ce9673a7/sms-run-e36e8b8a)",
+            "ImageType": "machine",
+            "Public": false,
+            "OwnerId": "074589347111",
+            "State": "available",
+            "BlockDeviceMappings": [
+                {
+                    "DeviceName": "/dev/sda1",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-0cfc95d3fd4dd6d99",
+                        "VolumeSize": 32,
+                        "VolumeType": "gp2"
+                    }
+                },
+                {
+                    "DeviceName": "/dev/sdf",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-0f8b4b50529e05847",
+                        "VolumeSize": 30,
+                        "VolumeType": "gp2"
+                    }
+                }
+            ],
+            "Description": "SMS ReplicationJobId = sms-job-ce9673a7 ReplicationRunId = sms-run-e36e8b8a",
+            "EnaSupport": false,
+            "Hypervisor": "xen",
+            "Name": "Created by (sms-job-ce9673a7/sms-run-e36e8b8a)",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "VirtualizationType": "hvm"
+        },
+        {
+            "Architecture": "x86_64",
+            "CreationDate": "2018-11-05T06:44:48.000Z",
+            "ImageId": "ami-0d7d2f1f932f96f8f",
+            "ImageLocation": "074589347111/Created by (sms-job-ce9673a7/sms-run-696e8b00)",
+            "ImageType": "machine",
+            "Public": false,
+            "OwnerId": "074589347111",
+            "State": "available",
+            "BlockDeviceMappings": [
+                {
+                    "DeviceName": "/dev/sda1",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-0d9036fc6a42826b7",
+                        "VolumeSize": 32,
+                        "VolumeType": "gp2"
+                    }
+                },
+                {
+                    "DeviceName": "/dev/sdf",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-04a2793ee5bcb2a02",
+                        "VolumeSize": 30,
+                        "VolumeType": "gp2"
+                    }
+                }
+            ],
+            "Description": "SMS ReplicationJobId = sms-job-ce9673a7 ReplicationRunId = sms-run-696e8b00",
+            "EnaSupport": false,
+            "Hypervisor": "xen",
+            "Name": "Created by (sms-job-ce9673a7/sms-run-696e8b00)",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "VirtualizationType": "hvm"
+        },
+        {
+            "Architecture": "x86_64",
+            "CreationDate": "2018-11-07T19:11:29.000Z",
+            "ImageId": "ami-0dc0c3c39729b5697",
+            "ImageLocation": "074589347111/Created by (sms-job-a19673c8/sms-run-c26e8bab)",
+            "ImageType": "machine",
+            "Public": false,
+            "OwnerId": "074589347111",
+            "State": "available",
+            "BlockDeviceMappings": [
+                {
+                    "DeviceName": "/dev/sda1",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-08b78148a56a0e456",
+                        "VolumeSize": 32,
+                        "VolumeType": "gp2"
+                    }
+                },
+                {
+                    "DeviceName": "/dev/sdf",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-0c4ecab7bccb04af5",
+                        "VolumeSize": 100,
+                        "VolumeType": "gp2"
+                    }
+                }
+            ],
+            "Description": "testing moving scrappy",
+            "EnaSupport": false,
+            "Hypervisor": "xen",
+            "Name": "Created by (sms-job-a19673c8/sms-run-c26e8bab)",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "VirtualizationType": "hvm"
+        },
+        {
+            "Architecture": "x86_64",
+            "CreationDate": "2018-11-07T18:38:45.000Z",
+            "ImageId": "ami-0e56c434a733bf2c8",
+            "ImageLocation": "074589347111/Created by (sms-job-ce9673a7/sms-run-816e8be8)",
+            "ImageType": "machine",
+            "Public": false,
+            "OwnerId": "074589347111",
+            "State": "available",
+            "BlockDeviceMappings": [
+                {
+                    "DeviceName": "/dev/sda1",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-0c3de6c8d946356e7",
+                        "VolumeSize": 32,
+                        "VolumeType": "gp2"
+                    }
+                },
+                {
+                    "DeviceName": "/dev/sdf",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-06dfa2768cfe1ca86",
+                        "VolumeSize": 30,
+                        "VolumeType": "gp2"
+                    }
+                }
+            ],
+            "Description": "SMS ReplicationJobId = sms-job-ce9673a7 ReplicationRunId = sms-run-816e8be8",
+            "EnaSupport": false,
+            "Hypervisor": "xen",
+            "Name": "Created by (sms-job-ce9673a7/sms-run-816e8be8)",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "VirtualizationType": "hvm"
+        },
+        {
+            "Architecture": "x86_64",
+            "CreationDate": "2018-11-08T06:38:14.000Z",
+            "ImageId": "ami-0e800ad6e15cca0ac",
+            "ImageLocation": "074589347111/Created by (sms-job-a19673c8/sms-run-75698c1c)",
+            "ImageType": "machine",
+            "Public": false,
+            "OwnerId": "074589347111",
+            "State": "available",
+            "BlockDeviceMappings": [
+                {
+                    "DeviceName": "/dev/sda1",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-04a9a1fc49b9350c7",
+                        "VolumeSize": 32,
+                        "VolumeType": "gp2"
+                    }
+                },
+                {
+                    "DeviceName": "/dev/sdf",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-0dae6335744622303",
+                        "VolumeSize": 100,
+                        "VolumeType": "gp2"
+                    }
+                }
+            ],
+            "Description": "testing moving scrappy",
+            "EnaSupport": false,
+            "Hypervisor": "xen",
+            "Name": "Created by (sms-job-a19673c8/sms-run-75698c1c)",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "VirtualizationType": "hvm"
+        },
+        {
+            "Architecture": "x86_64",
+            "CreationDate": "2018-09-07T06:53:39.000Z",
+            "ImageId": "ami-0f112f5b9f873c539",
+            "ImageLocation": "074589347111/Created by (sms-job-c5886dac/sms-run-cd10f5a4)",
+            "ImageType": "machine",
+            "Public": false,
+            "OwnerId": "074589347111",
+            "Platform": "windows",
+            "State": "available",
+            "BlockDeviceMappings": [
+                {
+                    "DeviceName": "/dev/sda1",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-0f94ed6bac079b514",
+                        "VolumeSize": 75,
+                        "VolumeType": "gp2"
+                    }
+                },
+                {
+                    "DeviceName": "/dev/sdf",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-02bd1a9d443266995",
+                        "VolumeSize": 150,
+                        "VolumeType": "gp2"
+                    }
+                }
+            ],
+            "Description": "SMS ReplicationJobId = sms-job-c5886dac ReplicationRunId = sms-run-cd10f5a4",
+            "EnaSupport": false,
+            "Hypervisor": "xen",
+            "Name": "Created by (sms-job-c5886dac/sms-run-cd10f5a4)",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "VirtualizationType": "hvm"
+        },
+        {
+            "Architecture": "x86_64",
+            "CreationDate": "2018-05-08T23:32:50.000Z",
+            "ImageId": "ami-514d3c29",
+            "ImageLocation": "074589347111/Q-its-jira01-5-8",
+            "ImageType": "machine",
+            "Public": false,
+            "OwnerId": "074589347111",
+            "Platform": "windows",
+            "State": "available",
+            "BlockDeviceMappings": [
+                {
+                    "DeviceName": "/dev/sda1",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-016819c669e7a720e",
+                        "VolumeSize": 30,
+                        "VolumeType": "gp2"
+                    }
+                },
+                {
+                    "DeviceName": "xvdb",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-0fdb4efc139def3df",
+                        "VolumeSize": 200,
+                        "VolumeType": "gp2"
+                    }
+                }
+            ],
+            "Description": "",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "Name": "Q-its-jira01-5-8",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm"
+        },
+        {
+            "Architecture": "x86_64",
+            "CreationDate": "2018-07-17T01:31:45.000Z",
+            "ImageId": "ami-63bfe21b",
+            "ImageLocation": "074589347111/Created by (sms-job-a48d68cd/sms-run-7702e71e)",
+            "ImageType": "machine",
+            "Public": false,
+            "OwnerId": "074589347111",
+            "Platform": "windows",
+            "State": "available",
+            "BlockDeviceMappings": [
+                {
+                    "DeviceName": "/dev/sda1",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-0d44b05bcfbe81bb8",
+                        "VolumeSize": 200,
+                        "VolumeType": "gp2"
+                    }
+                }
+            ],
+            "Description": "SMS ReplicationJobId = sms-job-a48d68cd ReplicationRunId = sms-run-7702e71e",
+            "EnaSupport": false,
+            "Hypervisor": "xen",
+            "Name": "Created by (sms-job-a48d68cd/sms-run-7702e71e)",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm"
+        },
+        {
+            "Architecture": "x86_64",
+            "CreationDate": "2018-01-31T22:33:48.000Z",
+            "ImageId": "ami-66c67d1e",
+            "ImageLocation": "074589347111/Created by (sms-job-e9b15480/sms-run-25ed084c)",
+            "ImageType": "machine",
+            "Public": false,
+            "OwnerId": "074589347111",
+            "State": "available",
+            "BlockDeviceMappings": [
+                {
+                    "DeviceName": "/dev/sda1",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-04053192bb15120ee",
+                        "VolumeSize": 32,
+                        "VolumeType": "gp2"
+                    }
+                }
+            ],
+            "Description": "SMS ReplicationJobId = sms-job-e9b15480 ReplicationRunId = sms-run-25ed084c",
+            "Hypervisor": "xen",
+            "Name": "Created by (sms-job-e9b15480/sms-run-25ed084c)",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "ucop-rhel6-ec2-template.old"
+                }
+            ],
+            "VirtualizationType": "hvm"
+        },
+        {
+            "Architecture": "x86_64",
+            "CreationDate": "2018-04-19T18:46:12.000Z",
+            "ImageId": "ami-7ea6c906",
+            "ImageLocation": "074589347111/Created by (sms-job-72b85d1b/sms-run-25d5304c)",
+            "ImageType": "machine",
+            "Public": false,
+            "OwnerId": "074589347111",
+            "State": "available",
+            "BlockDeviceMappings": [
+                {
+                    "DeviceName": "/dev/sda1",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-0e12d5e7ba098a472",
+                        "VolumeSize": 32,
+                        "VolumeType": "gp2"
+                    }
+                }
+            ],
+            "Description": "SMS ReplicationJobId = sms-job-72b85d1b ReplicationRunId = sms-run-25d5304c",
+            "Hypervisor": "xen",
+            "Name": "Created by (sms-job-72b85d1b/sms-run-25d5304c)",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "VirtualizationType": "hvm"
+        },
+        {
+            "Architecture": "x86_64",
+            "CreationDate": "2018-05-01T21:21:30.000Z",
+            "ImageId": "ami-87c6b3ff",
+            "ImageLocation": "074589347111/its-ra01",
+            "ImageType": "machine",
+            "Public": false,
+            "OwnerId": "074589347111",
+            "Platform": "windows",
+            "State": "available",
+            "BlockDeviceMappings": [
+                {
+                    "DeviceName": "/dev/sda1",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-013dc45f805b88984",
+                        "VolumeSize": 30,
+                        "VolumeType": "gp2"
+                    }
+                },
+                {
+                    "DeviceName": "xvdb",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-0e1e80db7c60a9428",
+                        "VolumeSize": 200,
+                        "VolumeType": "gp2"
+                    }
+                }
+            ],
+            "Description": "",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "Name": "its-ra01",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm"
+        },
+        {
+            "Architecture": "x86_64",
+            "CreationDate": "2018-04-20T21:42:55.000Z",
+            "ImageId": "ami-9d1e70e5",
+            "ImageLocation": "074589347111/Created by (sms-job-28b85d41/sms-run-52d4313b)",
+            "ImageType": "machine",
+            "Public": false,
+            "OwnerId": "074589347111",
+            "State": "available",
+            "BlockDeviceMappings": [
+                {
+                    "DeviceName": "/dev/sda1",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-0a896a98689bcb057",
+                        "VolumeSize": 32,
+                        "VolumeType": "gp2"
+                    }
+                }
+            ],
+            "Description": "unxrhet01",
+            "Hypervisor": "xen",
+            "Name": "Created by (sms-job-28b85d41/sms-run-52d4313b)",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "VirtualizationType": "hvm"
+        },
+        {
+            "Architecture": "x86_64",
+            "CreationDate": "2018-06-30T11:11:37.000Z",
+            "ImageId": "ami-c4e0aabc",
+            "ImageLocation": "074589347111/Created by (sms-job-3782675e/sms-run-a23bdecb)",
+            "ImageType": "machine",
+            "Public": false,
+            "OwnerId": "074589347111",
+            "Platform": "windows",
+            "State": "available",
+            "BlockDeviceMappings": [
+                {
+                    "DeviceName": "/dev/sda1",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-08ba200115eab6ae7",
+                        "VolumeSize": 750,
+                        "VolumeType": "gp2"
+                    }
+                }
+            ],
+            "Description": "SMS ReplicationJobId = sms-job-3782675e ReplicationRunId = sms-run-a23bdecb",
+            "EnaSupport": false,
+            "Hypervisor": "xen",
+            "Name": "Created by (sms-job-3782675e/sms-run-a23bdecb)",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm"
+        },
+        {
+            "Architecture": "x86_64",
+            "CreationDate": "2018-03-02T00:20:53.000Z",
+            "ImageId": "ami-fb6fe483",
+            "ImageLocation": "074589347111/puppetmaster",
+            "ImageType": "machine",
+            "Public": false,
+            "OwnerId": "074589347111",
+            "State": "available",
+            "BlockDeviceMappings": [
+                {
+                    "DeviceName": "/dev/sda1",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-04d3f2f379144d828",
+                        "VolumeSize": 32,
+                        "VolumeType": "gp2"
+                    }
+                },
+                {
+                    "DeviceName": "/dev/sdf",
+                    "Ebs": {
+                        "Encrypted": false,
+                        "DeleteOnTermination": false,
+                        "SnapshotId": "snap-01d2004dfed7ecb27",
+                        "VolumeSize": 30,
+                        "VolumeType": "gp2"
+                    }
+                }
+            ],
+            "Description": "",
+            "Hypervisor": "xen",
+            "Name": "puppetmaster",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "puppetmaster"
+                }
+            ],
+            "VirtualizationType": "hvm"
+        }
+    ]
+}

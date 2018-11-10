@@ -29,3 +29,11 @@ aws ssm list-tags-for-resource --resource-type ManagedInstance --resource-id mi-
 
 
 
+aws ssm add-tags-to-resource \
+  --resource-type ManagedInstance \
+  --resource-id  mi-08032710dee55bc93 \
+  --tags \
+    Key=Name,Value=aigtest02 \
+    Key=ucop:application,Value=migration \
+    Key=ucop:environment,Value=poc \
+    Key=ucop:service,Value=ait
