@@ -1,0 +1,145 @@
+Ashley SSM Agent Demo
+=================================
+
+
+- ssm-agent (Ashley)
+ 
+  - prereqs
+    - cleanup
+      - delete ssm parameter
+        - aws ssm delete-parameter --name /activation/csgappt01
+      - make sure awsscrum-lnx2, csgappt01 is deregistered:
+        - aws ssm deregister-managed-instance --instance-id mi-xxx
+      - delete activation
+        - aws ssm describe-activations
+        - aws ssm aws ssm delete-activation --activation-id <>
+      - uninstall ssm-agent from awsscrum-lnx2
+        - sudo rpm -e amazon-ssm-agent
+
+    - set up zoom
+    - set up 2 xterm assume role in boneyard
+      - py3
+      - setup ssh-agent
+      - cd ~/git-repos/github/ucopacme/technotes/aws/ssm
+    - login to AWS console in teh boneyard
+    - go to SSM console 
+
+  - what is ssm-agent (talking points)
+    - component of AWS systems manager
+    - lightweight agent installed on servers communicates with aws systems mngr
+    - installs on servers running on AWS and in on-premises data center
+    - enables us to automate maintenance and deployment tasks
+      - resource groups
+      - instance inventory
+      - apply patches, updates 
+      - configuration changes across resource groups
+      - run commands
+      - open sessions
+
+  - what is ssm managed instance (open managed instances tab)
+    - any Amazon EC2 instance or on-premises server in your hybrid 
+      environment that has been configured for Systems Manager
+    - on-prem vs. ec2
+      - instance id
+
+
+  - install agent onto on-prem VMware VM
+
+    - outline the steps
+
+      - activations
+        - id/code (show in console)
+        - require and IAM role
+        - can be used for registering instances for limited time 
+
+      - ssm-agent install
+        - aws package repo
+          - https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_amd64/amazon-ssm-agent.rpm
+      - ssm-agent registration
+      - start ssm-agent service
+
+    - using shell
+      - cd bash/
+      - cat scripts and describe
+        - create_ssm_agent_activation.sh
+        - ssm_agent_setup.sh
+      - cut-n-paste
+
+cd bash
+./create_ssm_agent_activation.sh awscrum-lnx2
+scp ssm_agent_setup.sh ashley@awsscrum-lnx2:~/
+ssh ashley@awsscrum-lnx2
+./ssm_agent_setup.sh <id> <code>
+
+
+    - using anisible
+      - push activation into SSM paramater store
+
+vi boto/make_ssm_activation.py
+
+./boto/make_ssm_activation.py csgappt01
+aws ssm get-parameter --name /activation/csgappt01
+
+      - install/register ssm-agent
+        - playbook
+          - install_ssm_agent
+            - leverages other people's work
+
+cd anisible/playbook/install_ssm_agent
+vi install_ssm_agent.yml
+ansible-playbook -i inventory -e "ssm_param_name=/activation/csgappt01" install_ssm_agent.yml
+
+  - tag on-prem instance with SSM
+    - cli
+
+aws ssm describe-instance-information | egrep "InstanceId|ComputerName" | grep -B1 csgappt01
+
+HOSTNAME=csgappt01
+#ID=mi-0632f5beb972bd5f4
+ID=
+
+aws ssm add-tags-to-resource \
+  --resource-type ManagedInstance \
+  --tags \
+    Key=Name,Value=${HOSTNAME} \
+    Key=ucop:application,Value=migration \
+    Key=ucop:environment,Value=poc \
+    Key=ucop:service,Value=ait \
+  --resource-id ${ID}
+
+aws ssm list-tags-for-resource \
+  --resource-type ManagedInstance \
+  --resource-id $ID
+
+
+
+Where do we go from here
+------------------------
+   
+- tag replicated AMI based on managed instance tags
+  - automate AMI tagging via cloudwatch events and lambda
+- use tags to configure placement and networking during migration
+- use tags to create ssm resource groups 
+  - manage migration of entire stacks
+- tag ec2 instances based on AMI tags after migration
+- can we use ssm to create sms replication jobs?
+
+
+Things I learned
+----------------
+
+- we should make sure hostname and vm name match prior to replication setup
+- we will need to manage rep job artifacts
+  - AMI proliferation
+    - tag by hostname of source VM
+  - snapshots
+    - delete all repjob snaps except most recent
+  - delete repjobs after instance migration complete
+  - tag AMI with migrationStatus
+  - retain AMI for used completed migration
+- not trivial to match VM attributes to migrated EC2 instances
+  - multiple sources of metadata must be queried:
+    - ssm managedInstance
+    - replication job
+    - AMI
+    - ec2 instance

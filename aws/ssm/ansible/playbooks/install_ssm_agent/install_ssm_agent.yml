@@ -1,0 +1,32 @@
+---
+# Usage:
+# ansible-playbook -i inventory -e "ssm_param_name=<param_name>" install_ssm_agent.yml
+ 
+# This playbook makes use of the following plugins and roles:
+# 
+#   ansible plugin to query SSM parameter store
+#   https://docs.ansible.com/ansible/2.5/plugins/lookup/aws_ssm.html
+# 
+#   ansible role to install and register ssm-agent
+#   https://github.com/dhoeric/ansible-aws-ssm
+
+
+- hosts: testservers
+  remote_user: ashley
+  become: yes
+  vars:
+    region: "us-west-2"
+    activation: "{{ lookup('aws_ssm', '{{ ssm_param_name }}') }}"
+  # tasks:
+  # - name: lookup activation id
+  #   debug:
+  #     var: activation['ActivationId']
+  # - name: lookup activation code
+  #   debug:
+  #     var: activation['ActivationCode']
+  roles:
+    - role: ansible-aws-ssm
+      vars:
+        aws_ssm_activation_id: "{{ activation['ActivationId'] }}"
+        aws_ssm_activation_code: "{{ activation['ActivationCode'] }}"
+        aws_ssm_ec2_region: "{{ region }}"
