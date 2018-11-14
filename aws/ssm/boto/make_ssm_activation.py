@@ -1,9 +1,4 @@
 #!/usr/bin/env python
-import sys
-import json
-import boto3
-from organizer.utils import yamlfmt
-
 '''
 Creates ssm activation for a single host and puts activation id/code into
 ssm paramater store as 'SecretString'.
@@ -12,6 +7,12 @@ Usage:
     python create_ssm_activation.py <hostname>
     aws ssm get-parameter --name /activation/<hostname> --with-decryption
 '''
+
+
+import sys
+import json
+import boto3
+from organizer.utils import yamlfmt
 
 ROLE = 'service-role/AmazonEC2RunCommandRoleForManagedInstances'
 

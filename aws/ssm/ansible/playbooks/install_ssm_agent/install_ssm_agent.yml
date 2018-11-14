@@ -17,13 +17,6 @@
   vars:
     region: "us-west-2"
     activation: "{{ lookup('aws_ssm', '{{ ssm_param_name }}') }}"
-  # tasks:
-  # - name: lookup activation id
-  #   debug:
-  #     var: activation['ActivationId']
-  # - name: lookup activation code
-  #   debug:
-  #     var: activation['ActivationCode']
   roles:
     - role: ansible-aws-ssm
       vars:
